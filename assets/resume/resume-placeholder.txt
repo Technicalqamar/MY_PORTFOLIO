@@ -1,0 +1,11 @@
+RESUME PLACEHOLDER
+
+Place your actual resume PDF here, e.g.: resume.pdf
+
+Expected path used by index.html (all "Resume" / "Download Resume" buttons):
+    assets/resume/resume.pdf
+
+To use it:
+1. Drop your PDF into this folder.
+2. Rename it to resume.pdf (or update the three hrefs in index.html that
+   point to assets/resume/resume.pdf).

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QAMAR ZAMAN — React Front-End Developer</title>
+<meta name="description" content="Portfolio of QAMAR ZAMAN, a React-focused Front-End Developer building responsive, component-based web interfaces with HTML, CSS, JavaScript, React and Firebase.">
+
+<!-- Open Graph placeholders -->
+<meta property="og:title" content="QAMAR ZAMAN — React Front-End Developer">
+<meta property="og:description" content="Portfolio showcasing React and front-end development projects.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="YOUR_PORTFOLIO_URL">
+<meta property="og:image" content="YOUR_OG_IMAGE_URL">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     NAVBAR
+     ============================================================ -->
+<header class="navbar" id="navbar">
+  <nav class="nav-inner" aria-label="Primary">
+    <a href="#home" class="logo"><span class="logo-dot" aria-hidden="true"></span>QAMAR ZAMAN</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" data-nav>Home</a></li>
+      <li><a href="#about" data-nav>About</a></li>
+      <li><a href="#skills" data-nav>Skills</a></li>
+      <li><a href="#projects" data-nav>Projects</a></li>
+      <li><a href="#assignments" data-nav>Assignments</a></li>
+      <li><a href="#contact" data-nav>Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <!-- Resume: place your PDF at assets/resume/resume.pdf (or update href) -->
+      <a href="assets/resume/resume.pdf" class="btn btn-primary" target="_blank" rel="noopener">Resume</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" data-nav>Home</a>
+    <a href="#about" data-nav>About</a>
+    <a href="#skills" data-nav>Skills</a>
+    <a href="#projects" data-nav>Projects</a>
+    <a href="#assignments" data-nav>Assignments</a>
+    <a href="#contact" data-nav>Contact</a>
+    <!-- Resume: place your PDF at assets/resume/resume.pdf (or update href) -->
+    <a href="assets/resume/resume.pdf" class="btn btn-primary btn-block" target="_blank" rel="noopener">Resume</a>
+  </div>
+</header>
+
+<main id="home">
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <span class="hero-eyebrow">Available for internships &amp; junior roles</span>
+        <h1>QAMAR ZAMAN</h1>
+        <p class="hero-role">React Front-End Developer</p>
+        <p class="hero-desc">I build responsive, modern and user-focused web interfaces using HTML, CSS, JavaScript and React.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="photo-frame">
+          <div class="photo-placeholder">
+            
+           
+              
+                <img src="assets/images/profile/profile.jpeg" alt="QAMAR ZAMAN">
+          
+          </div>
+        </div>
+        <div class="code-window" aria-hidden="true">
+          <div class="code-window-bar">
+            <span></span><span></span><span></span>
+            <span class="fname">skills.js</span>
+          </div>
+          <div class="code-window-body">
+            <span class="prompt">const</span> stack = [<br>
+            &nbsp;&nbsp;"<span id="typing-target">React</span>"<span class="cursor-blink"></span><br>
+            ];
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT
+       ============================================================ -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="section-index">About</span>
+        <h2>Focused on front-end, built on React</h2>
+        <p>Where I'm coming from, and how I approach building interfaces.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a front-end developer focused on building clean, responsive interfaces with HTML, CSS, JavaScript and React. My current focus is strengthening real-world React development skills — component architecture, routing, and connecting interfaces to services like Firebase.</p>
+          <p>Rather than studying in isolation, I build practical projects that mirror real product interfaces: dashboards, content platforms, and multi-page sites. Each one is an exercise in structuring components sensibly, keeping layouts responsive across devices, and writing code that's easy to read and extend.</p>
+          <p>I use Git and GitHub for version control on every project, and lean on Tailwind CSS or Bootstrap depending on what a layout calls for. I'm currently looking for an internship or junior role where I can keep building on this foundation alongside an experienced team.</p>
+        </div>
+        <div class="highlight-grid reveal">
+          <div class="highlight-card">
+            <div class="icon">⚛</div>
+            <h4>React Development</h4>
+            <p>Component-driven interfaces with React and React Router.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="icon">▦</div>
+            <h4>Responsive UI</h4>
+            <p>Layouts that hold up cleanly from mobile to desktop.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="icon">◧</div>
+            <h4>Component-Based Design</h4>
+            <p>Reusable, maintainable building blocks over one-off markup.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="icon">◆</div>
+            <h4>Firebase Integration</h4>
+            <p>Auth, data and hosting wired into real front-end projects.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS
+       ============================================================ -->
+  <section class="section" id="skills" style="background:var(--surface-raised);">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="section-index">Skills</span>
+        <h2>Technology I work with</h2>
+        <p>A practical, focused stack — with React at the center.</p>
+      </div>
+      <div class="skills-groups reveal">
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <div class="skill-chip-list">
+            <div class="skill-chip"><span class="skill-dot"></span>HTML5</div>
+            <div class="skill-chip"><span class="skill-dot"></span>CSS3</div>
+            <div class="skill-chip"><span class="skill-dot"></span>JavaScript</div>
+            <div class="skill-chip emphasis"><span class="skill-dot"></span>React.js</div>
+            <div class="skill-chip emphasis"><span class="skill-dot"></span>React Router</div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Tools &amp; Platforms</h3>
+          <div class="skill-chip-list">
+            <div class="skill-chip"><span class="skill-dot"></span>Firebase</div>
+            <div class="skill-chip"><span class="skill-dot"></span>Git</div>
+            <div class="skill-chip"><span class="skill-dot"></span>GitHub</div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>CSS / UI</h3>
+          <div class="skill-chip-list">
+            <div class="skill-chip"><span class="skill-dot"></span>Tailwind CSS</div>
+            <div class="skill-chip"><span class="skill-dot"></span>Bootstrap</div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Concepts</h3>
+          <div class="skill-chip-list">
+            <div class="skill-chip"><span class="skill-dot"></span>Responsive Design</div>
+            <div class="skill-chip"><span class="skill-dot"></span>Reusable Components</div>
+            <div class="skill-chip"><span class="skill-dot"></span>REST APIs</div>
+            <div class="skill-chip"><span class="skill-dot"></span>Modern UI Development</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS
+       ============================================================ -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="section-index">Projects</span>
+        <h2>Featured Projects</h2>
+        <p>Practical builds focused on React, responsive layout, and component architecture.</p>
+      </div>
+
+      <div class="filter-bar reveal" id="filterBar" role="group" aria-label="Filter projects by category">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="react">React</button>
+        <button class="filter-btn" data-filter="javascript">JavaScript</button>
+        <button class="filter-btn" data-filter="htmlcss">HTML/CSS</button>
+        <button class="filter-btn" data-filter="firebase">Firebase</button>
+      </div>
+
+      <div class="project-grid reveal" id="projectGrid">
+        <!-- Injected by JS from the PROJECTS data array -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ASSIGNMENTS & PRACTICE
+       ============================================================ -->
+  <section class="section" id="assignments" style="background:var(--surface-raised);">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="section-index">Assignments</span>
+        <h2>Assignments &amp; Practice</h2>
+        <p>Smaller exercises and course assignments used to practice specific concepts.</p>
+      </div>
+      <div class="assignments-grid reveal" id="assignmentGrid">
+        <!-- Injected by JS from the ASSIGNMENTS data array -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WHAT I CAN BUILD
+       ============================================================ -->
+  <section class="section" id="capabilities">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="section-index">Capabilities</span>
+        <h2>What I can build</h2>
+        <p>The kind of front-end work I'm ready to take on.</p>
+      </div>
+      <div class="capability-grid reveal">
+        <div class="capability-card"><div class="icon">▦</div><h4>Responsive Websites</h4><p>Layouts that adapt cleanly across every screen size.</p></div>
+        <div class="capability-card"><div class="icon">⚛</div><h4>React Interfaces</h4><p>Component-based apps with routing and state management.</p></div>
+        <div class="capability-card"><div class="icon">◧</div><h4>Reusable UI Components</h4><p>Building blocks designed to be shared across a codebase.</p></div>
+        <div class="capability-card"><div class="icon">⌁</div><h4>Interactive Web Apps</h4><p>Interfaces driven by user interaction and dynamic state.</p></div>
+        <div class="capability-card"><div class="icon">◆</div><h4>Firebase-Powered Features</h4><p>Authentication, data storage and hosting integrations.</p></div>
+        <div class="capability-card"><div class="icon">⇄</div><h4>API-Integrated Interfaces</h4><p>Front-ends that fetch and render data from REST APIs.</p></div>
+        <div class="capability-card"><div class="icon">▤</div><h4>Admin Dashboards</h4><p>Role-based panels for managing content and data.</p></div>
+        <div class="capability-card"><div class="icon">▥</div><h4>Modern Layouts</h4><p>Clean, well-spaced interfaces built with current CSS practices.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT
+       ============================================================ -->
+  <section class="section" id="contact">
+    <div class="section-inner">
+      <div class="contact-wrap reveal">
+        <div class="contact-copy">
+          <h2>Let's build something great.</h2>
+          <p>Open to internship and junior front-end opportunities. Feel free to reach out directly or check my work on GitHub.</p>
+          <div class="hero-cta" style="margin-top:28px;">
+            <!-- Resume: place your PDF at assets/resume/resume.pdf (or update href) -->
+            <a href="assets/resume/resume.pdf" class="btn btn-primary" target="_blank" rel="noopener">Download Resume</a>
+          </div>
+        </div>
+        <div class="contact-list">
+          <div class="contact-item">
+            <div><span class="label">Phone</span><a class="value" href="tel:03428171029">03428171029</a></div>
+          </div>
+          <div class="contact-item">
+            <div><span class="label">Email</span><a class="value" href="mailto:qamarzaman445556@gmail.com">qamarzaman445556@gmail.com</a></div>
+          </div>
+          <div class="contact-item">
+            <div><span class="label">GitHub</span><a class="value" href="https://github.com/technicalqamar" target="_blank" rel="noopener noreferrer">https://github.com/technicalqamar</a></div>
+          </div>
+          <div class="contact-item">
+            <div><span class="label">LinkedIn</span><a class="value" href="https://www.linkedin.com/in/qamar-zaman-b7aab6377/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/qamar-zaman-b7aab6377/</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <p>&copy; <span id="year"></span> QAMAR ZAMAN. Built with HTML, CSS &amp; JavaScript.</p>
+    <div class="footer-socials">
+      <a href="https://github.com/technicalqamar" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/qamar-zaman-b7aab6377/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:qamarzaman445556@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+<!-- JavaScript -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
