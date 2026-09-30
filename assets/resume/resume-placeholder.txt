@@ -1,11 +1,10 @@
-RESUME PLACEHOLDER
+RESUME PLACEHOLDER (legacy)
 
-Place your actual resume PDF here, e.g.: resume.pdf
+Your resume now lives at:
+    assets/documents/Qamar_Zaman_Full_Stack_Resume_v2.pdf
 
-Expected path used by index.html (all "Resume" / "Download Resume" buttons):
-    assets/resume/resume.pdf
+All "Resume" / "Download Resume" links in index.html (navbar, mobile menu,
+hero CTA, contact section) point to that file. Update the hrefs there if you
+ever rename or replace the PDF.
 
-To use it:
-1. Drop your PDF into this folder.
-2. Rename it to resume.pdf (or update the three hrefs in index.html that
-   point to assets/resume/resume.pdf).
+This folder is no longer used by the portfolio.

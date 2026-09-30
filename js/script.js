@@ -1,69 +1,117 @@
 /* ============================================================
-   1. PROJECT DATA — edit titles, descriptions, tech, urls,
-      and image paths here
+   1. PROJECT DATA
    ------------------------------------------------------------
-   For each project you can update:
-     - title:        project name
-     - description:  short summary
-     - tech:         array of technologies used
-     - categories:   filter categories (react, javascript, htmlcss, firebase)
-     - image:        path to the project screenshot in
-                     assets/images/projects/  (empty string keeps placeholder)
-     - liveUrl:      live demo URL (use YOUR_LIVE_PROJECT_URL as placeholder)
-     - githubUrl:    repository URL (use YOUR_GITHUB_URL as placeholder)
+   Editable fields per project:
+     - title        project name
+     - description  what was actually built (keep it truthful)
+     - tech         technologies genuinely used
+     - layers       which parts of the stack it covers.
+                    Valid keys: fe (frontend), be (backend),
+                                 db (database), auth (authentication)
+     - categories   filter tags: fullstack, frontend, backend, react
+     - kind         'fullstack' | 'frontend' — drives the card badge
+     - status       optional, e.g. 'In progress'
+     - image        path to a screenshot in assets/images/projects/
+                    (leave "" to show the labelled placeholder)
+     - liveUrl      deployed URL, or "" while it isn't public
+     - githubUrl    repository URL, or "" while it isn't public
    ============================================================ */
 const PROJECTS = [
   {
-    title: "PlayTube",
-    description: "A YouTube-style responsive interface built with React, focusing on reusable components, responsive layouts, routing, and modern UI.",
-    tech: ["React", "React Router", "CSS3"],
-    categories: ["react", "javascript"],
-    image: "./assets/images/projects/playtube.jpg",
-    liveUrl: "YOUR_LIVE_PROJECT_URL",
-    githubUrl: "YOUR_GITHUB_URL"
+    title: "Full-Stack CRUD Application",
+    description: "The whole request path in one build: a React front-end talking to a Node.js and Express.js REST API, with Mongoose models over MongoDB for storage and JWT authentication guarding protected routes through middleware.",
+    tech: ["React", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT"],
+    layers: ["fe", "be", "db", "auth"],
+    categories: ["fullstack", "frontend", "backend", "react"],
+    kind: "fullstack",
+    status: "In progress",
+    image: "",
+    liveUrl: "",
+    githubUrl: ""
   },
   {
     title: "School Management System",
-    description: "A modern school management interface with role-based dashboard concepts and responsive admin UI.",
+    description: "A school management interface built around role-based dashboards in React and styled with Tailwind CSS. Firebase provides the authentication and the hosted data layer sitting behind it.",
     tech: ["React", "Tailwind CSS", "Firebase"],
-    categories: ["react", "firebase"],
+    layers: ["fe", "be", "db", "auth"],
+    categories: ["fullstack", "frontend", "backend", "react"],
+    kind: "fullstack",
     image: "./assets/images/projects/school-management.jpg",
-    liveUrl: "YOUR_LIVE_PROJECT_URL",
-    githubUrl: "YOUR_GITHUB_URL"
+    liveUrl: "",
+    githubUrl: ""
   },
   {
-    title: "Training Institute Website",
-    description: "A responsive multi-page training institute website built with modern frontend technologies and reusable UI components.",
-    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
-    categories: ["htmlcss", "javascript"],
-    image: "./assets/images/projects/training-institute.jpg",
-    liveUrl: "https://training-institute-mauve.vercel.app/",
-    githubUrl: "https://github.com/Technicalqamar/Training-Institute.git"
+    title: "PlayTube",
+    description: "A YouTube-style video interface built in React, focused on reusable components, routing between views, and a layout that stays readable from a phone up to a wide desktop.",
+    tech: ["React", "React Router", "CSS3"],
+    layers: ["fe"],
+    categories: ["frontend", "react"],
+    kind: "frontend",
+    image: "./assets/images/projects/playtube.jpg",
+    liveUrl: "",
+    githubUrl: ""
   },
   {
     title: "Developer Productivity Suite",
-    description: "A developer-focused productivity platform concept involving project generation and developer tooling workflows.",
+    description: "A developer-focused productivity platform built in React, covering project generation and developer tooling workflows, with data brought in through a REST API.",
     tech: ["React", "JavaScript", "REST API"],
-    categories: ["react", "javascript"],
+    layers: ["fe"],
+    categories: ["frontend", "react"],
+    kind: "frontend",
     image: "./assets/images/projects/developer-productivity-suite.jpg",
-    liveUrl: "YOUR_LIVE_PROJECT_URL",
-    githubUrl: "YOUR_GITHUB_URL"
+    liveUrl: "",
+    githubUrl: ""
   },
   {
     title: "Asset Management System",
-    description: "A web-based asset management system designed to organize, track, and manage assets through a clean and responsive user interface.",
+    description: "A web-based system for organising, tracking and managing assets through a clean, responsive interface.",
     tech: ["React"],
-    categories: ["react"],
+    layers: ["fe"],
+    categories: ["frontend", "react"],
+    kind: "frontend",
     image: "./assets/images/projects/asset-management.jpg",
     liveUrl: "https://hackathonproject-pink.vercel.app/",
     githubUrl: "https://github.com/Technicalqamar/Hackathon.git"
+  },
+  {
+    title: "Training Institute Website",
+    description: "A responsive multi-page website for a training institute, built with HTML5, CSS3 and JavaScript, using Bootstrap for its grid and utility classes.",
+    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
+    layers: ["fe"],
+    categories: ["frontend"],
+    kind: "frontend",
+    image: "./assets/images/projects/training-institute.jpg",
+    liveUrl: "https://training-institute-mauve.vercel.app/",
+    githubUrl: "https://github.com/Technicalqamar/Training-Institute.git"
   }
 ];
 
 /* ============================================================
-   2. ASSIGNMENTS DATA — edit freely
+   2. ASSIGNMENTS DATA
+   ------------------------------------------------------------
+   Smaller exercises used to practise specific concepts.
+   githubUrl may be "" or a "YOUR_GITHUB_URL" placeholder — either
+   renders as plain text instead of a dead link.
    ============================================================ */
 const ASSIGNMENTS = [
+  {
+    title: "Express REST CRUD",
+    practiced: "Create, read, update and delete routes with request middleware",
+    tech: ["Node.js", "Express.js", "REST APIs"],
+    githubUrl: ""
+  },
+  {
+    title: "Mongoose Data Modelling",
+    practiced: "Defining MongoDB schemas, validation and queries with Mongoose",
+    tech: ["MongoDB", "Mongoose"],
+    githubUrl: ""
+  },
+  {
+    title: "JWT Authentication Flow",
+    practiced: "Login, token issue and protected routes behind auth middleware",
+    tech: ["Node.js", "Express.js", "JWT"],
+    githubUrl: ""
+  },
   {
     title: "Responsive Layout Practice",
     practiced: "Flexbox and Grid layouts across breakpoints",
@@ -103,77 +151,161 @@ const ASSIGNMENTS = [
 ];
 
 /* ============================================================
-   3. RENDER PROJECT CARDS
+   3. SHARED RENDER HELPERS
+   ============================================================ */
+
+/* Layer pills. Colour maps to the same palette used by the skills
+   categories, so a project card and a skill chip read as the same layer. */
+const LAYERS = {
+  fe:   { label: 'Frontend', cls: 'layer-pill--fe' },
+  be:   { label: 'Backend',  cls: 'layer-pill--be' },
+  db:   { label: 'Database', cls: 'layer-pill--db' },
+  auth: { label: 'Auth',     cls: 'layer-pill--db' }
+};
+
+const KIND_LABELS = { fullstack: 'Full-Stack', frontend: 'Frontend' };
+
+/* A link is only rendered when it is a real, absolute http(s) URL.
+   This keeps placeholder and empty values from becoming dead anchors. */
+function isUsableUrl(url){
+  if(typeof url !== 'string') return false;
+  const value = url.trim();
+  return value !== '' && !value.includes('YOUR_') && /^https?:\/\//i.test(value);
+}
+
+function escapeHtml(value){
+  const entities = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
+  return String(value).replace(/[&<>"']/g, char => entities[char]);
+}
+
+function renderLayerPills(layers){
+  return (layers || [])
+    .map(key => LAYERS[key])
+    .filter(Boolean)
+    .map(layer => `<span class="layer-pill ${layer.cls}">${layer.label}</span>`)
+    .join('');
+}
+
+/* ============================================================
+   4. RENDER PROJECT CARDS
    ------------------------------------------------------------
-   The thumbnail uses the project's local image (assets/images/
-   projects/...) when provided, otherwise it falls back to a
-   clearly labelled placeholder.
+   The thumbnail uses the project's local image
+   (assets/images/projects/...) when one is provided, otherwise it
+   falls back to a clearly labelled placeholder.
    ============================================================ */
 function renderProjects(filter){
   const grid = document.getElementById('projectGrid');
+  const visible = PROJECTS.filter(p => filter === 'all' || p.categories.includes(filter));
+
   grid.innerHTML = '';
-  PROJECTS
-    .filter(p => filter === 'all' || p.categories.includes(filter))
-    .forEach(p => {
-      const card = document.createElement('article');
-      card.className = 'project-card reveal in-view';
-      const thumb = p.image
-        ? `<img src="${p.image}" alt="${p.title} project screenshot">`
-        : `<span>Add screenshot to assets/images/projects/</span>`;
-      card.innerHTML = `
-        <div class="project-thumb">${thumb}</div>
-        <div class="project-body">
-          <h3>${p.title}</h3>
-          <p>${p.description}</p>
-          <div class="tech-tags">${p.tech.map(t => `<span class="tech-tag">${t}</span>`).join('')}</div>
-          <div class="project-actions">
-            <a href="${p.liveUrl}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Project</a>
-            <a href="${p.githubUrl}" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
-          </div>
-        </div>
-      `;
-      grid.appendChild(card);
-    });
+
+  if(visible.length === 0){
+    grid.innerHTML = '<p class="project-empty">No projects in this category yet.</p>';
+    return;
+  }
+
+  visible.forEach(project => {
+    const isFullStack = project.kind === 'fullstack';
+    const card = document.createElement('article');
+    card.className = 'project-card reveal in-view' + (isFullStack ? ' is-fullstack' : '');
+
+    const thumb = project.image
+      ? `<img src="${escapeHtml(project.image)}" alt="${escapeHtml(project.title)} project screenshot">`
+      : `<span>Add screenshot to assets/images/projects/</span>`;
+
+    const actions = [];
+    if(isUsableUrl(project.liveUrl)){
+      actions.push(
+        `<a href="${escapeHtml(project.liveUrl)}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Project</a>`
+      );
+    }
+    if(isUsableUrl(project.githubUrl)){
+      actions.push(
+        `<a href="${escapeHtml(project.githubUrl)}" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">GitHub</a>`
+      );
+    }
+
+    const actionsMarkup = actions.length
+      ? `<div class="project-actions">${actions.join('')}</div>`
+      : `<div class="project-note">Public links coming soon</div>`;
+
+    const statusMarkup = project.status
+      ? ` <span class="project-status">${escapeHtml(project.status)}</span>`
+      : '';
+
+    card.innerHTML = `
+      <div class="project-thumb">
+        <span class="project-kind">${escapeHtml(KIND_LABELS[project.kind] || 'Project')}</span>
+        ${thumb}
+      </div>
+      <div class="project-body">
+        <h3>${escapeHtml(project.title)}${statusMarkup}</h3>
+        <p>${escapeHtml(project.description)}</p>
+        <div class="layer-pills">${renderLayerPills(project.layers)}</div>
+        <div class="tech-tags">${project.tech.map(t => `<span class="tech-tag">${escapeHtml(t)}</span>`).join('')}</div>
+        ${actionsMarkup}
+      </div>
+    `;
+
+    grid.appendChild(card);
+  });
 }
 renderProjects('all');
 
 document.getElementById('filterBar').addEventListener('click', (e) => {
   const btn = e.target.closest('.filter-btn');
   if(!btn) return;
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
+
+  document.querySelectorAll('.filter-btn').forEach(b => {
+    const isActive = b === btn;
+    b.classList.toggle('active', isActive);
+    b.setAttribute('aria-pressed', String(isActive));
+  });
+
   renderProjects(btn.dataset.filter);
 });
 
+/* Set the initial pressed state on the default filter. */
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.setAttribute('aria-pressed', String(btn.classList.contains('active')));
+});
+
 /* ============================================================
-   4. RENDER ASSIGNMENT CARDS
+   5. RENDER ASSIGNMENT CARDS
    ============================================================ */
 function renderAssignments(){
   const grid = document.getElementById('assignmentGrid');
-  grid.innerHTML = ASSIGNMENTS.map(a => `
-    <div class="assignment-card">
-      <h4>${a.title}</h4>
-      <p class="practiced">${a.practiced}</p>
-      <div class="assignment-tags">${a.tech.map(t => `<span>${t}</span>`).join('')}</div>
-      <div class="assignment-links">
-        <a href="${a.githubUrl}" target="_blank" rel="noopener">GitHub →</a>
+
+  grid.innerHTML = ASSIGNMENTS.map(item => {
+    const link = isUsableUrl(item.githubUrl)
+      ? `<a href="${escapeHtml(item.githubUrl)}" target="_blank" rel="noopener noreferrer">GitHub →</a>`
+      : `<span class="pending">Link coming soon</span>`;
+
+    return `
+      <div class="assignment-card">
+        <h4>${escapeHtml(item.title)}</h4>
+        <p class="practiced">${escapeHtml(item.practiced)}</p>
+        <div class="assignment-tags">${item.tech.map(t => `<span>${escapeHtml(t)}</span>`).join('')}</div>
+        <div class="assignment-links">${link}</div>
       </div>
-    </div>
-  `).join('');
+    `;
+  }).join('');
 }
 renderAssignments();
 
 /* ============================================================
-   5. NAVBAR SCROLL STATE
+   6. NAVBAR SCROLL STATE
    ============================================================ */
 const navbar = document.getElementById('navbar');
+const scrollTopBtn = document.getElementById('scrollTopBtn');
+
 window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 8);
-  document.getElementById('scrollTopBtn').classList.toggle('visible', window.scrollY > 500);
+  scrollTopBtn.classList.toggle('visible', window.scrollY > 500);
 }, { passive: true });
 
 /* ============================================================
-   6. MOBILE MENU
+   7. MOBILE MENU
    ============================================================ */
 const hamburgerBtn = document.getElementById('hamburgerBtn');
 const mobileMenu = document.getElementById('mobileMenu');
@@ -193,7 +325,7 @@ hamburgerBtn.addEventListener('click', () => {
 mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMobileMenu));
 
 /* ============================================================
-   7. ACTIVE NAV LINK ON SCROLL
+   8. ACTIVE NAV LINK ON SCROLL
    ============================================================ */
 const sections = document.querySelectorAll('main section[id], main[id]');
 const navAnchors = document.querySelectorAll('[data-nav]');
@@ -201,25 +333,33 @@ const navAnchors = document.querySelectorAll('[data-nav]');
 function setActiveNav(){
   let current = 'home';
   const scrollPos = window.scrollY + 120;
+
   sections.forEach(sec => {
     if(sec.offsetTop <= scrollPos) current = sec.id;
   });
+
   navAnchors.forEach(a => {
-    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    const isActive = a.getAttribute('href') === '#' + current;
+    a.classList.toggle('active', isActive);
+    if(isActive){
+      a.setAttribute('aria-current', 'true');
+    } else {
+      a.removeAttribute('aria-current');
+    }
   });
 }
 window.addEventListener('scroll', setActiveNav, { passive: true });
 setActiveNav();
 
 /* ============================================================
-   8. SCROLL TO TOP
+   9. SCROLL TO TOP
    ============================================================ */
-document.getElementById('scrollTopBtn').addEventListener('click', () => {
+scrollTopBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 /* ============================================================
-   9. SCROLL REVEAL (IntersectionObserver)
+   10. SCROLL REVEAL (IntersectionObserver)
    ============================================================ */
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -239,10 +379,13 @@ if(!reduceMotion && 'IntersectionObserver' in window){
 }
 
 /* ============================================================
-   10. HERO CODE-WINDOW TYPING EFFECT (single signature animation)
+   11. HERO CODE-WINDOW TYPING EFFECT (single signature animation)
+   ------------------------------------------------------------
+   The target sits on the `frontend:` line, so only front-end
+   technologies are cycled here.
    ============================================================ */
 if(!reduceMotion){
-  const words = ["React", "JavaScript", "Firebase", "Tailwind CSS"];
+  const words = ["React", "Next.js", "JavaScript"];
   const target = document.getElementById('typing-target');
   let wordIndex = 0, charIndex = words[0].length, deleting = false;
 
@@ -270,6 +413,6 @@ if(!reduceMotion){
 }
 
 /* ============================================================
-   11. FOOTER YEAR
+   12. FOOTER YEAR
    ============================================================ */
 document.getElementById('year').textContent = new Date().getFullYear();

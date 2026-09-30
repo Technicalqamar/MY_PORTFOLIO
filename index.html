@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>QAMAR ZAMAN — React Front-End Developer</title>
-<meta name="description" content="Portfolio of QAMAR ZAMAN, a React-focused Front-End Developer building responsive, component-based web interfaces with HTML, CSS, JavaScript, React and Firebase.">
+<title>QAMAR ZAMAN — Full-Stack Developer</title>
+<meta name="description" content="Portfolio of QAMAR ZAMAN, a Full-Stack Developer building complete web applications with React and Next.js on the frontend and Node.js, Express.js, MongoDB and JWT authentication on the backend.">
 
 <!-- Open Graph placeholders -->
-<meta property="og:title" content="QAMAR ZAMAN — React Front-End Developer">
-<meta property="og:description" content="Portfolio showcasing React and front-end development projects.">
+<meta property="og:title" content="QAMAR ZAMAN — Full-Stack Developer">
+<meta property="og:description" content="Full-stack development with React, Next.js, Node.js, Express.js, MongoDB and JWT authentication.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="YOUR_PORTFOLIO_URL">
 <meta property="og:image" content="YOUR_OG_IMAGE_URL">
@@ -34,11 +34,12 @@
       <li><a href="#skills" data-nav>Skills</a></li>
       <li><a href="#projects" data-nav>Projects</a></li>
       <li><a href="#assignments" data-nav>Assignments</a></li>
+      <li><a href="#stack" data-nav>Full-Stack</a></li>
       <li><a href="#contact" data-nav>Contact</a></li>
     </ul>
     <div class="nav-actions">
-      <!-- Resume: place your PDF at assets/resume/resume.pdf (or update href) -->
-      <a href="assets/resume/resume.pdf" class="btn btn-primary" target="_blank" rel="noopener">Resume</a>
+      <!-- Resume PDF: assets/documents/Qamar_Zaman_Full_Stack_Resume_v2.pdf -->
+      <a href="assets/documents/Qamar_Zaman_Full_Stack_Resume_v2.pdf" class="btn btn-primary" download target="_blank" rel="noopener">Resume</a>
       <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
         <span></span><span></span><span></span>
       </button>
@@ -50,9 +51,10 @@
     <a href="#skills" data-nav>Skills</a>
     <a href="#projects" data-nav>Projects</a>
     <a href="#assignments" data-nav>Assignments</a>
+    <a href="#stack" data-nav>Full-Stack</a>
     <a href="#contact" data-nav>Contact</a>
-    <!-- Resume: place your PDF at assets/resume/resume.pdf (or update href) -->
-    <a href="assets/resume/resume.pdf" class="btn btn-primary btn-block" target="_blank" rel="noopener">Resume</a>
+    <!-- Resume PDF: assets/documents/Qamar_Zaman_Full_Stack_Resume_v2.pdf -->
+    <a href="assets/documents/Qamar_Zaman_Full_Stack_Resume_v2.pdf" class="btn btn-primary btn-block" download target="_blank" rel="noopener">Resume</a>
   </div>
 </header>
 
@@ -66,32 +68,46 @@
       <div class="hero-copy">
         <span class="hero-eyebrow">Available for internships &amp; junior roles</span>
         <h1>QAMAR ZAMAN</h1>
-        <p class="hero-role">React Front-End Developer</p>
-        <p class="hero-desc">I build responsive, modern and user-focused web interfaces using HTML, CSS, JavaScript and React.</p>
+        <p class="hero-role">Full-Stack Developer<span class="hero-role-tag">MERN</span></p>
+        <p class="hero-desc">I build complete web applications — responsive React and Next.js interfaces on the front-end, Node.js and Express.js REST APIs behind them, with MongoDB, Mongoose and JWT authentication underneath.</p>
+
+        <!-- Build path: Frontend → API → Backend → Database → Auth -->
+        <div class="stack-flow">
+          <span class="stack-caption">How I build, end to end</span>
+          <ul class="stack-steps">
+            <li class="stack-step stack-step--fe"><span class="stack-num">01</span>Frontend</li>
+            <li class="stack-step stack-step--be"><span class="stack-num">02</span>REST API</li>
+            <li class="stack-step stack-step--be"><span class="stack-num">03</span>Backend</li>
+            <li class="stack-step stack-step--db"><span class="stack-num">04</span>Database</li>
+            <li class="stack-step stack-step--db"><span class="stack-num">05</span>Auth</li>
+          </ul>
+        </div>
+
         <div class="hero-cta">
           <a href="#projects" class="btn btn-primary">View My Projects</a>
+          <a href="assets/documents/Qamar_Zaman_Full_Stack_Resume_v2.pdf" class="btn btn-secondary" download target="_blank" rel="noopener">Download Resume</a>
           <a href="#contact" class="btn btn-secondary">Contact Me</a>
         </div>
       </div>
       <div class="hero-visual">
         <div class="photo-frame">
           <div class="photo-placeholder">
-            
-           
-              
-                <img src="assets/images/profile/profile.jpeg" alt="QAMAR ZAMAN">
-          
+            <img src="assets/images/profile/profile.jpeg" alt="QAMAR ZAMAN">
           </div>
         </div>
         <div class="code-window" aria-hidden="true">
           <div class="code-window-bar">
             <span></span><span></span><span></span>
-            <span class="fname">skills.js</span>
+            <span class="fname">stack.js</span>
           </div>
           <div class="code-window-body">
-            <span class="prompt">const</span> stack = [<br>
-            &nbsp;&nbsp;"<span id="typing-target">React</span>"<span class="cursor-blink"></span><br>
-            ];
+            <span class="prompt">const</span> app = {<br>
+            &nbsp;&nbsp;frontend: <span class="code-str">"<span id="typing-target">React</span>"</span><span class="cursor-blink"></span>,<br>
+            &nbsp;&nbsp;backend: <span class="code-str">"Node.js + Express"</span>,<br>
+            &nbsp;&nbsp;database: <span class="code-str">"MongoDB"</span>,<br>
+            &nbsp;&nbsp;auth: <span class="code-str">"JWT"</span><br>
+            };<br>
+            &nbsp;
           </div>
         </div>
       </div>
@@ -105,35 +121,35 @@
     <div class="section-inner">
       <div class="section-head reveal">
         <span class="section-index">About</span>
-        <h2>Focused on front-end, built on React</h2>
-        <p>Where I'm coming from, and how I approach building interfaces.</p>
+        <h2>From front-end into full-stack</h2>
+        <p>Where I started, where I've moved to, and how I approach building.</p>
       </div>
       <div class="about-grid">
         <div class="about-text reveal">
-          <p>I'm a front-end developer focused on building clean, responsive interfaces with HTML, CSS, JavaScript and React. My current focus is strengthening real-world React development skills — component architecture, routing, and connecting interfaces to services like Firebase.</p>
-          <p>Rather than studying in isolation, I build practical projects that mirror real product interfaces: dashboards, content platforms, and multi-page sites. Each one is an exercise in structuring components sensibly, keeping layouts responsive across devices, and writing code that's easy to read and extend.</p>
-          <p>I use Git and GitHub for version control on every project, and lean on Tailwind CSS or Bootstrap depending on what a layout calls for. I'm currently looking for an internship or junior role where I can keep building on this foundation alongside an experienced team.</p>
+          <p>I started out building front-end work — responsive layouts with HTML, CSS and JavaScript, then moving into React for component-driven interfaces. That foundation is still what I build on: clean markup, sensible component structure, and layouts that hold up from a phone to a wide desktop.</p>
+          <p>What changed is how far I take a project. I've been moving into the back-end so I can own the whole request path instead of stopping at the interface — Express routes and middleware, Mongoose models mapped to MongoDB, and JWT authentication guarding protected endpoints. It means I can take a feature from schema to API to screen without leaving the codebase.</p>
+          <p>On top of that I work with Next.js for server-rendered React, and use Git, GitHub, Postman and VS Code day to day. I'm currently looking for an internship or junior full-stack role where I can keep building on this, ideally alongside an experienced team.</p>
         </div>
         <div class="highlight-grid reveal">
           <div class="highlight-card">
-            <div class="icon">⚛</div>
-            <h4>React Development</h4>
-            <p>Component-driven interfaces with React and React Router.</p>
+            <div class="icon icon--fe">⚛</div>
+            <h4>Front-End</h4>
+            <p>React and Next.js interfaces, with CSS, Bootstrap and Tailwind for layout.</p>
           </div>
           <div class="highlight-card">
-            <div class="icon">▦</div>
-            <h4>Responsive UI</h4>
-            <p>Layouts that hold up cleanly from mobile to desktop.</p>
+            <div class="icon icon--be">⇄</div>
+            <h4>Back-End</h4>
+            <p>Node.js and Express.js REST APIs, routing, controllers and middleware.</p>
           </div>
           <div class="highlight-card">
-            <div class="icon">◧</div>
-            <h4>Component-Based Design</h4>
-            <p>Reusable, maintainable building blocks over one-off markup.</p>
+            <div class="icon icon--db">▤</div>
+            <h4>Data &amp; Auth</h4>
+            <p>MongoDB with Mongoose schemas, plus JWT authentication on protected routes.</p>
           </div>
           <div class="highlight-card">
-            <div class="icon">◆</div>
-            <h4>Firebase Integration</h4>
-            <p>Auth, data and hosting wired into real front-end projects.</p>
+            <div class="icon icon--tl">◆</div>
+            <h4>Developer Tools</h4>
+            <p>Git, GitHub, Postman and VS Code across the whole build cycle.</p>
           </div>
         </div>
       </div>
@@ -143,47 +159,53 @@
   <!-- ============================================================
        SKILLS
        ============================================================ -->
-  <section class="section" id="skills" style="background:var(--surface-raised);">
+  <section class="section section--alt" id="skills">
     <div class="section-inner">
       <div class="section-head reveal">
         <span class="section-index">Skills</span>
-        <h2>Technology I work with</h2>
-        <p>A practical, focused stack — with React at the center.</p>
+        <h2>A stack that covers the whole request</h2>
+        <p>Grouped by layer, from interface to database.</p>
       </div>
       <div class="skills-groups reveal">
-        <div class="skill-group">
+        <div class="skill-group skill-group--fe">
           <h3>Frontend</h3>
-          <div class="skill-chip-list">
-            <div class="skill-chip"><span class="skill-dot"></span>HTML5</div>
-            <div class="skill-chip"><span class="skill-dot"></span>CSS3</div>
-            <div class="skill-chip"><span class="skill-dot"></span>JavaScript</div>
-            <div class="skill-chip emphasis"><span class="skill-dot"></span>React.js</div>
-            <div class="skill-chip emphasis"><span class="skill-dot"></span>React Router</div>
-          </div>
+          <ul class="skill-chip-list">
+            <li class="skill-chip emphasis"><span class="skill-dot"></span>React</li>
+            <li class="skill-chip emphasis"><span class="skill-dot"></span>Next.js</li>
+            <li class="skill-chip"><span class="skill-dot"></span>JavaScript (ES6+)</li>
+            <li class="skill-chip"><span class="skill-dot"></span>HTML5</li>
+            <li class="skill-chip"><span class="skill-dot"></span>CSS3</li>
+            <li class="skill-chip"><span class="skill-dot"></span>Tailwind CSS</li>
+            <li class="skill-chip"><span class="skill-dot"></span>Bootstrap</li>
+          </ul>
         </div>
-        <div class="skill-group">
-          <h3>Tools &amp; Platforms</h3>
-          <div class="skill-chip-list">
-            <div class="skill-chip"><span class="skill-dot"></span>Firebase</div>
-            <div class="skill-chip"><span class="skill-dot"></span>Git</div>
-            <div class="skill-chip"><span class="skill-dot"></span>GitHub</div>
-          </div>
+        <div class="skill-group skill-group--be">
+          <h3>Backend</h3>
+          <ul class="skill-chip-list">
+            <li class="skill-chip emphasis"><span class="skill-dot"></span>Node.js</li>
+            <li class="skill-chip emphasis"><span class="skill-dot"></span>Express.js</li>
+            <li class="skill-chip"><span class="skill-dot"></span>REST APIs</li>
+            <li class="skill-chip"><span class="skill-dot"></span>Middleware</li>
+            <li class="skill-chip"><span class="skill-dot"></span>CRUD Operations</li>
+          </ul>
         </div>
-        <div class="skill-group">
-          <h3>CSS / UI</h3>
-          <div class="skill-chip-list">
-            <div class="skill-chip"><span class="skill-dot"></span>Tailwind CSS</div>
-            <div class="skill-chip"><span class="skill-dot"></span>Bootstrap</div>
-          </div>
+        <div class="skill-group skill-group--db">
+          <h3>Database &amp; Auth</h3>
+          <ul class="skill-chip-list">
+            <li class="skill-chip emphasis"><span class="skill-dot"></span>MongoDB</li>
+            <li class="skill-chip emphasis"><span class="skill-dot"></span>Mongoose</li>
+            <li class="skill-chip"><span class="skill-dot"></span>JWT Authentication</li>
+          </ul>
         </div>
-        <div class="skill-group">
-          <h3>Concepts</h3>
-          <div class="skill-chip-list">
-            <div class="skill-chip"><span class="skill-dot"></span>Responsive Design</div>
-            <div class="skill-chip"><span class="skill-dot"></span>Reusable Components</div>
-            <div class="skill-chip"><span class="skill-dot"></span>REST APIs</div>
-            <div class="skill-chip"><span class="skill-dot"></span>Modern UI Development</div>
-          </div>
+        <div class="skill-group skill-group--tl">
+          <h3>Tools &amp; Services</h3>
+          <ul class="skill-chip-list">
+            <li class="skill-chip"><span class="skill-dot"></span>Git</li>
+            <li class="skill-chip"><span class="skill-dot"></span>GitHub</li>
+            <li class="skill-chip"><span class="skill-dot"></span>Postman</li>
+            <li class="skill-chip"><span class="skill-dot"></span>VS Code</li>
+            <li class="skill-chip"><span class="skill-dot"></span>Firebase</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -197,15 +219,15 @@
       <div class="section-head reveal">
         <span class="section-index">Projects</span>
         <h2>Featured Projects</h2>
-        <p>Practical builds focused on React, responsive layout, and component architecture.</p>
+        <p>Front-end work and full-stack builds — each card lists the layers it actually covers.</p>
       </div>
 
       <div class="filter-bar reveal" id="filterBar" role="group" aria-label="Filter projects by category">
         <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
         <button class="filter-btn" data-filter="react">React</button>
-        <button class="filter-btn" data-filter="javascript">JavaScript</button>
-        <button class="filter-btn" data-filter="htmlcss">HTML/CSS</button>
-        <button class="filter-btn" data-filter="firebase">Firebase</button>
       </div>
 
       <div class="project-grid reveal" id="projectGrid">
@@ -217,12 +239,12 @@
   <!-- ============================================================
        ASSIGNMENTS & PRACTICE
        ============================================================ -->
-  <section class="section" id="assignments" style="background:var(--surface-raised);">
+  <section class="section section--alt" id="assignments">
     <div class="section-inner">
       <div class="section-head reveal">
         <span class="section-index">Assignments</span>
         <h2>Assignments &amp; Practice</h2>
-        <p>Smaller exercises and course assignments used to practice specific concepts.</p>
+        <p>Smaller exercises used to practise specific concepts across the stack.</p>
       </div>
       <div class="assignments-grid reveal" id="assignmentGrid">
         <!-- Injected by JS from the ASSIGNMENTS data array -->
@@ -231,24 +253,34 @@
   </section>
 
   <!-- ============================================================
-       WHAT I CAN BUILD
+       FULL-STACK IN PRACTICE
        ============================================================ -->
-  <section class="section" id="capabilities">
+  <section class="section" id="stack">
     <div class="section-inner">
       <div class="section-head reveal">
-        <span class="section-index">Capabilities</span>
-        <h2>What I can build</h2>
-        <p>The kind of front-end work I'm ready to take on.</p>
+        <span class="section-index">Full-Stack</span>
+        <h2>What I can build end to end</h2>
+        <p>One codebase, all the way from interface to stored data.</p>
       </div>
+
+      <!-- Build path, restated as the visual hierarchy of this section -->
+      <ul class="stack-track reveal" aria-label="Build path: frontend, REST API, backend, database, authentication">
+        <li class="stack-track-step stack-step--fe"><span class="stack-track-num">01</span><span class="stack-track-label">Frontend</span></li>
+        <li class="stack-track-step stack-step--be"><span class="stack-track-num">02</span><span class="stack-track-label">REST API</span></li>
+        <li class="stack-track-step stack-step--be"><span class="stack-track-num">03</span><span class="stack-track-label">Backend</span></li>
+        <li class="stack-track-step stack-step--db"><span class="stack-track-num">04</span><span class="stack-track-label">Database</span></li>
+        <li class="stack-track-step stack-step--db"><span class="stack-track-num">05</span><span class="stack-track-label">Authentication</span></li>
+      </ul>
+
       <div class="capability-grid reveal">
-        <div class="capability-card"><div class="icon">▦</div><h4>Responsive Websites</h4><p>Layouts that adapt cleanly across every screen size.</p></div>
-        <div class="capability-card"><div class="icon">⚛</div><h4>React Interfaces</h4><p>Component-based apps with routing and state management.</p></div>
-        <div class="capability-card"><div class="icon">◧</div><h4>Reusable UI Components</h4><p>Building blocks designed to be shared across a codebase.</p></div>
-        <div class="capability-card"><div class="icon">⌁</div><h4>Interactive Web Apps</h4><p>Interfaces driven by user interaction and dynamic state.</p></div>
-        <div class="capability-card"><div class="icon">◆</div><h4>Firebase-Powered Features</h4><p>Authentication, data storage and hosting integrations.</p></div>
-        <div class="capability-card"><div class="icon">⇄</div><h4>API-Integrated Interfaces</h4><p>Front-ends that fetch and render data from REST APIs.</p></div>
-        <div class="capability-card"><div class="icon">▤</div><h4>Admin Dashboards</h4><p>Role-based panels for managing content and data.</p></div>
-        <div class="capability-card"><div class="icon">▥</div><h4>Modern Layouts</h4><p>Clean, well-spaced interfaces built with current CSS practices.</p></div>
+        <div class="capability-card"><div class="icon icon--fe">⚛</div><h4>Responsive Front-Ends</h4><p>React and Next.js interfaces built with HTML, CSS, Bootstrap or Tailwind.</p></div>
+        <div class="capability-card"><div class="icon icon--fe">◧</div><h4>Component Architecture</h4><p>Reusable components, routing and state designed to be shared across a codebase.</p></div>
+        <div class="capability-card"><div class="icon icon--be">⇄</div><h4>REST APIs</h4><p>Node.js and Express.js routes, controllers and middleware.</p></div>
+        <div class="capability-card"><div class="icon icon--be">⌁</div><h4>CRUD Applications</h4><p>Create, read, update and delete flows wired from form to database.</p></div>
+        <div class="capability-card"><div class="icon icon--db">▤</div><h4>Data Modelling</h4><p>MongoDB collections shaped and queried through Mongoose schemas.</p></div>
+        <div class="capability-card"><div class="icon icon--db">◆</div><h4>Authentication</h4><p>JWT login flows protecting routes behind auth middleware.</p></div>
+        <div class="capability-card"><div class="icon icon--be">▥</div><h4>API-Driven Interfaces</h4><p>Front-ends that fetch, render and mutate data from real endpoints.</p></div>
+        <div class="capability-card"><div class="icon icon--tl">⚙</div><h4>Developer Tooling</h4><p>Git, GitHub, Postman and VS Code used throughout the build cycle.</p></div>
       </div>
     </div>
   </section>
@@ -261,10 +293,10 @@
       <div class="contact-wrap reveal">
         <div class="contact-copy">
           <h2>Let's build something great.</h2>
-          <p>Open to internship and junior front-end opportunities. Feel free to reach out directly or check my work on GitHub.</p>
-          <div class="hero-cta" style="margin-top:28px;">
-            <!-- Resume: place your PDF at assets/resume/resume.pdf (or update href) -->
-            <a href="assets/resume/resume.pdf" class="btn btn-primary" target="_blank" rel="noopener">Download Resume</a>
+          <p>Open to internship and junior full-stack opportunities. Feel free to reach out directly or check my work on GitHub.</p>
+          <div class="hero-cta contact-cta">
+            <!-- Resume PDF: assets/documents/Qamar_Zaman_Full_Stack_Resume_v2.pdf -->
+            <a href="assets/documents/Qamar_Zaman_Full_Stack_Resume_v2.pdf" class="btn btn-primary" download target="_blank" rel="noopener">Download Resume</a>
           </div>
         </div>
         <div class="contact-list">
@@ -289,7 +321,7 @@
 
 <footer>
   <div class="footer-inner">
-    <p>&copy; <span id="year"></span> QAMAR ZAMAN. Built with HTML, CSS &amp; JavaScript.</p>
+    <p>&copy; <span id="year"></span> QAMAR ZAMAN — Full-Stack Developer. Built with HTML, CSS &amp; JavaScript.</p>
     <div class="footer-socials">
       <a href="https://github.com/technicalqamar" target="_blank" rel="noopener noreferrer">GitHub</a>
       <a href="https://www.linkedin.com/in/qamar-zaman-b7aab6377/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
