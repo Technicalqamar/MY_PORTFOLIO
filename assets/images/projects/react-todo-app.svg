@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="React To-Do App project thumbnail">
+  <defs>
+    <radialGradient id="glow" cx="78%" cy="12%" r="70%">
+      <stop offset="0%" stop-color="#5FB3C7" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#5FB3C7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="win" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#1E2328"/>
+      <stop offset="100%" stop-color="#171B1F"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="#171B1F"/>
+  <rect width="1200" height="675" fill="url(#glow)"/>
+
+  <!-- app window -->
+  <rect x="250" y="88" width="700" height="500" rx="14" fill="url(#win)" stroke="#2A2F35" stroke-width="1.5"/>
+
+  <!-- title bar -->
+  <circle cx="286" cy="118" r="6" fill="#2A2F35"/>
+  <circle cx="308" cy="118" r="6" fill="#2A2F35"/>
+  <circle cx="330" cy="118" r="6" fill="#2A2F35"/>
+  <line x1="250" y1="142" x2="950" y2="142" stroke="#22262B" stroke-width="1.5"/>
+
+  <!-- heading -->
+  <text x="290" y="196" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="27" font-weight="600" fill="#E7E9EA">To-Do List</text>
+  <text x="910" y="194" text-anchor="end" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="15" fill="#8A9199">2 of 3 done</text>
+
+  <!-- add-task input -->
+  <rect x="290" y="220" width="464" height="44" rx="9" fill="#171B1F" stroke="#2A2F35" stroke-width="1.5"/>
+  <text x="308" y="248" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="15" fill="#8A9199">Add a new task…</text>
+  <rect x="768" y="220" width="44" height="44" rx="9" fill="#5FB3C7"/>
+  <path d="M790 236 v16 M782 244 h16" stroke="#0B1113" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- task 1 (done) -->
+  <rect x="290" y="288" width="620" height="56" rx="9" fill="#171B1F" stroke="#22262B" stroke-width="1.5"/>
+  <rect x="308" y="306" width="22" height="22" rx="6" fill="#5FB3C7"/>
+  <path d="M313 317 l5 5 l9 -10" stroke="#0B1113" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="346" y="322" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="17" fill="#8A9199">Finish Express API</text>
+  <line x1="346" y1="316" x2="490" y2="316" stroke="#8A9199" stroke-width="1.6"/>
+
+  <!-- task 2 (done) -->
+  <rect x="290" y="356" width="620" height="56" rx="9" fill="#171B1F" stroke="#22262B" stroke-width="1.5"/>
+  <rect x="308" y="374" width="22" height="22" rx="6" fill="#5FB3C7"/>
+  <path d="M313 385 l5 5 l9 -10" stroke="#0B1113" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="346" y="390" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="17" fill="#8A9199">Practice bcrypt + JWT login</text>
+  <line x1="346" y1="384" x2="522" y2="384" stroke="#8A9199" stroke-width="1.6"/>
+
+  <!-- task 3 (pending) -->
+  <rect x="290" y="424" width="620" height="56" rx="9" fill="#171B1F" stroke="#2A2F35" stroke-width="1.5"/>
+  <rect x="308" y="442" width="22" height="22" rx="6" fill="none" stroke="#5FB3C7" stroke-width="2"/>
+  <text x="346" y="458" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="17" fill="#E7E9EA">Update portfolio</text>
+</svg>

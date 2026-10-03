@@ -9,7 +9,7 @@
                     Valid keys: fe (frontend), be (backend),
                                  db (database), auth (authentication)
      - categories   filter tags: fullstack, frontend, backend, react
-     - kind         'fullstack' | 'frontend' — drives the card badge
+     - kind         'fullstack' | 'frontend' | 'backend' — drives the card badge
      - status       optional, e.g. 'In progress'
      - image        path to a screenshot in assets/images/projects/
                     (leave "" to show the labelled placeholder)
@@ -18,15 +18,36 @@
    ============================================================ */
 const PROJECTS = [
   {
-    title: "Full-Stack CRUD Application",
-    description: "The whole request path in one build: a React front-end talking to a Node.js and Express.js REST API, with Mongoose models over MongoDB for storage and JWT authentication guarding protected routes through middleware.",
-    tech: ["React", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT"],
-    layers: ["fe", "be", "db", "auth"],
-    categories: ["fullstack", "frontend", "backend", "react"],
-    kind: "fullstack",
-    status: "In progress",
-    image: "",
-    liveUrl: "",
+    title: "Training Institute Website",
+    description: "A responsive multi-page website for a training institute, built with HTML5, CSS3 and JavaScript, using Bootstrap for its grid and utility classes.",
+    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
+    layers: ["fe"],
+    categories: ["frontend"],
+    kind: "frontend",
+    image: "./assets/images/projects/training-institute.jpg",
+    liveUrl: "https://training-institute-mauve.vercel.app/",
+    githubUrl: "https://github.com/Technicalqamar/Training-Institute.git"
+  },
+  {
+    title: "Asset Management System",
+    description: "A web-based system for organising, tracking and managing assets through a clean, responsive interface.",
+    tech: ["React"],
+    layers: ["fe"],
+    categories: ["frontend", "react"],
+    kind: "frontend",
+    image: "./assets/images/projects/asset-management.jpg",
+    liveUrl: "https://hackathonproject-pink.vercel.app/",
+    githubUrl: "https://github.com/Technicalqamar/Hackathon.git"
+  },
+  {
+    title: "PlayTube",
+    description: "A YouTube-style video interface built in React, focused on reusable components, routing between views, and a layout that stays readable from a phone up to a wide desktop.",
+    tech: ["React", "React Router", "CSS3"],
+    layers: ["fe"],
+    categories: ["frontend", "react"],
+    kind: "frontend",
+    image: "./assets/images/projects/playtube.jpg",
+    liveUrl: "https://play-tube-orcin.vercel.app/",
     githubUrl: ""
   },
   {
@@ -41,48 +62,37 @@ const PROJECTS = [
     githubUrl: ""
   },
   {
-    title: "PlayTube",
-    description: "A YouTube-style video interface built in React, focused on reusable components, routing between views, and a layout that stays readable from a phone up to a wide desktop.",
-    tech: ["React", "React Router", "CSS3"],
-    layers: ["fe"],
-    categories: ["frontend", "react"],
-    kind: "frontend",
-    image: "./assets/images/projects/playtube.jpg",
-    liveUrl: "",
-    githubUrl: ""
-  },
-  {
     title: "Developer Productivity Suite",
     description: "A developer-focused productivity platform built in React, covering project generation and developer tooling workflows, with data brought in through a REST API.",
     tech: ["React", "JavaScript", "REST API"],
-    layers: ["fe"],
-    categories: ["frontend", "react"],
-    kind: "frontend",
+    layers: ["fe", "be"],
+    categories: ["fullstack", "react"],
+    kind: "fullstack",
     image: "./assets/images/projects/developer-productivity-suite.jpg",
     liveUrl: "",
     githubUrl: ""
   },
   {
-    title: "Asset Management System",
-    description: "A web-based system for organising, tracking and managing assets through a clean, responsive interface.",
+    title: "React To-Do App",
+    description: "A task manager built in React, covering component state, reusable inputs and list rendering as tasks are added, marked complete and removed.",
     tech: ["React"],
     layers: ["fe"],
     categories: ["frontend", "react"],
     kind: "frontend",
-    image: "./assets/images/projects/asset-management.jpg",
-    liveUrl: "https://hackathonproject-pink.vercel.app/",
-    githubUrl: "https://github.com/Technicalqamar/Hackathon.git"
+    image: "./assets/images/projects/react-todo-app.svg",
+    liveUrl: "https://react-todo-app-topaz-nu.vercel.app/",
+    githubUrl: ""
   },
   {
-    title: "Training Institute Website",
-    description: "A responsive multi-page website for a training institute, built with HTML5, CSS3 and JavaScript, using Bootstrap for its grid and utility classes.",
-    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
-    layers: ["fe"],
-    categories: ["frontend"],
-    kind: "frontend",
-    image: "./assets/images/projects/training-institute.jpg",
-    liveUrl: "https://training-institute-mauve.vercel.app/",
-    githubUrl: "https://github.com/Technicalqamar/Training-Institute.git"
+    title: "CRUD & Authentication API",
+    description: "A backend-only REST API handling full CRUD operations alongside user authentication: registration and login with bcrypt-hashed passwords, JWT token generation, and middleware guarding protected routes.",
+    tech: ["Node.js", "Express.js", "bcrypt", "JWT"],
+    layers: ["be", "auth"],
+    categories: ["backend"],
+    kind: "backend",
+    image: "",
+    liveUrl: "",
+    githubUrl: "https://github.com/Technicalqamar/CRUD-LOGIN.git"
   }
 ];
 
@@ -163,7 +173,7 @@ const LAYERS = {
   auth: { label: 'Auth',     cls: 'layer-pill--db' }
 };
 
-const KIND_LABELS = { fullstack: 'Full-Stack', frontend: 'Frontend' };
+const KIND_LABELS = { fullstack: 'Full-Stack', frontend: 'Frontend', backend: 'Backend' };
 
 /* A link is only rendered when it is a real, absolute http(s) URL.
    This keeps placeholder and empty values from becoming dead anchors. */
